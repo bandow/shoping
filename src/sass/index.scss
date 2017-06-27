@@ -277,7 +277,7 @@
 				&:before{
 					position:absolute;
 					bottom:.2rem;
-					right:1rem;
+					right:.2rem;
 					content:"";
 					width:0;
 					height:0;
@@ -287,7 +287,7 @@
 				&:after{
 					position:absolute;
 					top:.3rem;
-					right:1rem;
+					right:.2rem;
 					content:"";
 					width:0;
 					height:0;
@@ -299,7 +299,7 @@
 				&:before{
 					position:absolute;
 					top:35%;
-					right:1rem;
+					right:.2rem;
 					content:"";
 					width:0;
 					height:0;
@@ -436,6 +436,9 @@
 .integrating-range.on{
 	@include transition(all .5s);
 	@include transform(translate3d(0,0,0));
+}
+.pure-integral{
+	@extend .integrating-range;
 }
 
 .shop-wrapper{
@@ -1224,6 +1227,21 @@
 			    color: #ccc;
 			    -webkit-transform: rotateZ(-45deg);
 			    transform: rotateZ(-45deg)
+			}
+		}
+		p{
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:1;
+			background:rgba(0,0,0,.7);
+			font:.6rem/2 $publicFont;
+			color:#fff;
+			text-align:center;
+			em{
+				color:#fff000;
+				margin:0 .2rem;
 			}
 		}
 	}

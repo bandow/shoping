@@ -13,12 +13,13 @@
 <meta name="msapplication-tap-highlight" content="no">
 <title></title>
 <link rel="stylesheet" href="../dist/styles/swiper.min.css">
-<link href="styles/classify.4ed82.css" rel="stylesheet"></head>
+<link href="styles/classify.1f1d1.css" rel="stylesheet"></head>
 <body>
 <div class="wrapper classify-wrapper">
 	<header class="haeder-classify">
 		<ul>
-			<li class="on">综合排序</li>
+			<li class="on" id="oneInt">纯积分</li>
+			<li>综合排序</li>
 			<li>积分价格</li>
 			<li id="int">积分区间</li>
 		</ul>
@@ -113,6 +114,13 @@
 			<dd><span>12001-16000积分</span><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAulBMVEVMaXHaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEs0YhyoAAAAPXRSTlMAtob5ByH8AeFIXguy9/EjuofXZ/6E7FLQ0UdYJPK7U6ipajgimFmU+u3u9tawqgy3V1taO3NQSdgCtZPDN4WRGQAAAVRJREFUOMudldd6gzAMRv9CCjErQBNCJknoyE731vu/Vi9atu2Yniv0+VwIWZaAKvZYO+w3ur7ZHzRmQ4LJljsqsVsyU+QOY2oQv3LVnk9c/F7TffBIgDepZzsgCYNK5uYdSbkp2wGdISjcCZ3lNq+Dd16eZTXxSQH/7y5IiSEAmLGaPDIBjEkRBmChKi8A25UJ319G/u3a8izuO1gV0Ria3EVahBocsXvRAS67RewgVHYpRKTsUgS9CLrPL32JS3pZToGrvtglvZzGCrnNcykq/6BhZTbXpbBSuszmu+RUL+XX/uS7pIFRw/4Arrvctqs1kmEBAte1Gy1qWAKXlkAtDyJjlXJdegNgjlo8K9UHm7QYBfNsyMwUhsz0P+Or3WBsN3JbDXMAT+I18dhcKtO5oGZT7r5KOHcZJ+Kleaz0oHsUL00AODHNCbfr9fbdCdipdvgDP/tJSVjpynMAAAAASUVORK5CYII=" alt=""></i></dd>
 			<dd><span>16001以上</span><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAulBMVEVMaXHaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEs0YhyoAAAAPXRSTlMAtob5ByH8AeFIXguy9/EjuofXZ/6E7FLQ0UdYJPK7U6ipajgimFmU+u3u9tawqgy3V1taO3NQSdgCtZPDN4WRGQAAAVRJREFUOMudldd6gzAMRv9CCjErQBNCJknoyE731vu/Vi9atu2Yniv0+VwIWZaAKvZYO+w3ur7ZHzRmQ4LJljsqsVsyU+QOY2oQv3LVnk9c/F7TffBIgDepZzsgCYNK5uYdSbkp2wGdISjcCZ3lNq+Dd16eZTXxSQH/7y5IiSEAmLGaPDIBjEkRBmChKi8A25UJ319G/u3a8izuO1gV0Ria3EVahBocsXvRAS67RewgVHYpRKTsUgS9CLrPL32JS3pZToGrvtglvZzGCrnNcykq/6BhZTbXpbBSuszmu+RUL+XX/uS7pIFRw/4Arrvctqs1kmEBAte1Gy1qWAKXlkAtDyJjlXJdegNgjlo8K9UHm7QYBfNsyMwUhsz0P+Or3WBsN3JbDXMAT+I18dhcKtO5oGZT7r5KOHcZJ+Kleaz0oHsUL00AODHNCbfr9fbdCdipdvgDP/tJSVjpynMAAAAASUVORK5CYII=" alt=""></i></dd>
 		</dl>
+	</div>
+	<div class="pure-integral">
+		<dl>
+			<dd><span>纯积分</span><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAulBMVEVMaXHaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEs0YhyoAAAAPXRSTlMAtob5ByH8AeFIXguy9/EjuofXZ/6E7FLQ0UdYJPK7U6ipajgimFmU+u3u9tawqgy3V1taO3NQSdgCtZPDN4WRGQAAAVRJREFUOMudldd6gzAMRv9CCjErQBNCJknoyE731vu/Vi9atu2Yniv0+VwIWZaAKvZYO+w3ur7ZHzRmQ4LJljsqsVsyU+QOY2oQv3LVnk9c/F7TffBIgDepZzsgCYNK5uYdSbkp2wGdISjcCZ3lNq+Dd16eZTXxSQH/7y5IiSEAmLGaPDIBjEkRBmChKi8A25UJ319G/u3a8izuO1gV0Ria3EVahBocsXvRAS67RewgVHYpRKTsUgS9CLrPL32JS3pZToGrvtglvZzGCrnNcykq/6BhZTbXpbBSuszmu+RUL+XX/uS7pIFRw/4Arrvctqs1kmEBAte1Gy1qWAKXlkAtDyJjlXJdegNgjlo8K9UHm7QYBfNsyMwUhsz0P+Or3WBsN3JbDXMAT+I18dhcKtO5oGZT7r5KOHcZJ+Kleaz0oHsUL00AODHNCbfr9fbdCdipdvgDP/tJSVjpynMAAAAASUVORK5CYII=" alt=""></i></dd>
+			<dd><span>限时折扣</span><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAulBMVEVMaXHaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEs0YhyoAAAAPXRSTlMAtob5ByH8AeFIXguy9/EjuofXZ/6E7FLQ0UdYJPK7U6ipajgimFmU+u3u9tawqgy3V1taO3NQSdgCtZPDN4WRGQAAAVRJREFUOMudldd6gzAMRv9CCjErQBNCJknoyE731vu/Vi9atu2Yniv0+VwIWZaAKvZYO+w3ur7ZHzRmQ4LJljsqsVsyU+QOY2oQv3LVnk9c/F7TffBIgDepZzsgCYNK5uYdSbkp2wGdISjcCZ3lNq+Dd16eZTXxSQH/7y5IiSEAmLGaPDIBjEkRBmChKi8A25UJ319G/u3a8izuO1gV0Ria3EVahBocsXvRAS67RewgVHYpRKTsUgS9CLrPL32JS3pZToGrvtglvZzGCrnNcykq/6BhZTbXpbBSuszmu+RUL+XX/uS7pIFRw/4Arrvctqs1kmEBAte1Gy1qWAKXlkAtDyJjlXJdegNgjlo8K9UHm7QYBfNsyMwUhsz0P+Or3WBsN3JbDXMAT+I18dhcKtO5oGZT7r5KOHcZJ+Kleaz0oHsUL00AODHNCbfr9fbdCdipdvgDP/tJSVjpynMAAAAASUVORK5CYII=" alt=""></i></dd>
+			<dd><span>积分+现金</span><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAulBMVEVMaXHaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEvaAEs0YhyoAAAAPXRSTlMAtob5ByH8AeFIXguy9/EjuofXZ/6E7FLQ0UdYJPK7U6ipajgimFmU+u3u9tawqgy3V1taO3NQSdgCtZPDN4WRGQAAAVRJREFUOMudldd6gzAMRv9CCjErQBNCJknoyE731vu/Vi9atu2Yniv0+VwIWZaAKvZYO+w3ur7ZHzRmQ4LJljsqsVsyU+QOY2oQv3LVnk9c/F7TffBIgDepZzsgCYNK5uYdSbkp2wGdISjcCZ3lNq+Dd16eZTXxSQH/7y5IiSEAmLGaPDIBjEkRBmChKi8A25UJ319G/u3a8izuO1gV0Ria3EVahBocsXvRAS67RewgVHYpRKTsUgS9CLrPL32JS3pZToGrvtglvZzGCrnNcykq/6BhZTbXpbBSuszmu+RUL+XX/uS7pIFRw/4Arrvctqs1kmEBAte1Gy1qWAKXlkAtDyJjlXJdegNgjlo8K9UHm7QYBfNsyMwUhsz0P+Or3WBsN3JbDXMAT+I18dhcKtO5oGZT7r5KOHcZJ+Kleaz0oHsUL00AODHNCbfr9fbdCdipdvgDP/tJSVjpynMAAAAASUVORK5CYII=" alt=""></i></dd>
+		</dl>
 	</div> 
 	<footer class="shop-footer">
 		<a href="index.html">
@@ -133,5 +141,5 @@
 		</a>
 	</footer>
 </div>
-<script type="text/javascript" src="scripts/classify-bcd82.js"></script></body>
+<script type="text/javascript" src="scripts/classify-f08c0.js"></script></body>
 </html>

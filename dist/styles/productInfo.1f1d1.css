@@ -1,0 +1,1322 @@
+@charset "UTF-8";
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2016-10-18
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+  /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+html, body {
+  /*-webkit-user-select:none禁止用户进行复制.选择.*/
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  /*使用min-height:100%代替height：100%*/
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, div, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*把所有元素的内边距和边框不再会增加它的宽度*/
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none;
+  /*去掉列表点*/ }
+
+table {
+  border-collapse: collapse;
+  /*去掉表格的双行线*/
+  border-spacing: 0; }
+
+/*取消a标签在移动端点击时的背景颜色*/
+a, a:hover, a:active, a:visited, a:link, a:focus {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none; }
+
+input {
+  -webkit-appearance: none;
+  /*ios去除input默认样式*/ }
+
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2017-06-01
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-size: 18px; }
+
+@media (min-device-width: 320px) {
+  html {
+    font-size: 18px; } }
+
+@media (min-device-width: 360px) {
+  html {
+    font-size: 20.25px; } }
+
+@media (min-device-width: 375px) {
+  html {
+    font-size: 21.1px; } }
+
+@media (min-device-width: 384px) {
+  html {
+    font-size: 21.6px; } }
+
+@media (min-device-width: 400px) {
+  html {
+    font-size: 22.5px; } }
+
+@media (min-device-width: 412px) {
+  html {
+    font-size: 23.17px; } }
+
+@media (min-device-width: 414px) {
+  html {
+    font-size: 23.3px; } }
+
+@media (min-device-width: 480px) {
+  html {
+    font-size: 26.99px; } }
+
+@media (min-device-width: 533px) {
+  html {
+    font-size: 29.98px; } }
+
+@media (min-device-width: 568px) {
+  html {
+    font-size: 31.95px; } }
+
+@media (min-device-width: 600px) {
+  html {
+    font-size: 33.74px; } }
+
+@media (min-device-width: 640px) {
+  html {
+    font-size: 24px; } }
+
+.dossen-arrow {
+  position: relative; }
+  .dossen-arrow:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #ccc;
+    -webkit-transform: rotateZ(135deg);
+    transform: rotateZ(135deg); }
+
+.wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 3.5rem; }
+
+.haeder-info {
+  padding: 3%; }
+
+.haeder-info a {
+  position: relative;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .haeder-info a > i {
+    margin-right: .5rem;
+    background: #fefefe;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0;
+    border: 1px solid #ddd;
+    border-radius: 100%; }
+    .haeder-info a > i > img {
+      width: 100%;
+      height: 100%; }
+  .haeder-info a .text h3 {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: .75rem; }
+    .haeder-info a .text h3 i {
+      margin-left: .3rem;
+      display: block;
+      width: .7rem;
+      height: .7rem;
+      font-size: 0; }
+      .haeder-info a .text h3 i img {
+        width: 100%; }
+  .haeder-info a .text p {
+    color: #999;
+    font-size: .6rem; }
+  .haeder-info a:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    color: #ccc;
+    -moz-transform: rotateZ(135deg);
+    -o-transform: rotateZ(135deg);
+    -ms-transform: rotateZ(135deg);
+    -webkit-transform: rotateZ(135deg);
+    transform: rotateZ(135deg); }
+
+.ad {
+  padding: 3%; }
+
+.swiper-slide {
+  font-size: 0; }
+  .swiper-slide img {
+    width: 100%; }
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1; }
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 5px; }
+
+.ad-lr {
+  padding: 0 3%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .ad-lr > a {
+    padding: 4% 0;
+    flex: 1;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto; }
+    .ad-lr > a:nth-child(1) {
+      background: #00a0e9;
+      border-radius: 5px 0 0 5px; }
+    .ad-lr > a:nth-child(2) {
+      background: #8fc31f;
+      border-radius: 0 5px 5px 0; }
+    .ad-lr > a i {
+      width: .7rem;
+      font-size: 0;
+      margin-right: .3rem; }
+      .ad-lr > a i img {
+        width: 100%; }
+    .ad-lr > a span {
+      color: #fff;
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.ad-m {
+  padding: 3%;
+  border-bottom: 1px solid #ddd;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex; }
+  .ad-m > div {
+    flex: 1;
+    font-size: 0; }
+    .ad-m > div img {
+      width: 100%;
+      height: auto; }
+  .ad-m .l {
+    margin-right: 1.5%; }
+  .ad-m .r {
+    margin-left: 1.5%;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+
+.new-products {
+  padding: 0 3% 3%;
+  border-bottom: 1px solid #ddd; }
+  .new-products h3 {
+    font: 0.75rem/3 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .new-products h3 span {
+      color: #333; }
+    .new-products h3 a {
+      color: #999; }
+  .new-products .products-list {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .new-products .products-list > div {
+      width: 48.5%; }
+      .new-products .products-list > div:nth-child(2n) {
+        margin-left: 3%; }
+      .new-products .products-list > div .img {
+        font-size: 0; }
+        .new-products .products-list > div .img img {
+          width: 100%; }
+      .new-products .products-list > div .text {
+        padding: 2% 0 5%; }
+        .new-products .products-list > div .text h4 {
+          font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .new-products .products-list > div .text p {
+          font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          color: #da004c; }
+
+.special {
+  padding: 0 3%; }
+  .special h3 {
+    font: 0.75rem/3 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #333; }
+  .special .special-ad {
+    font-size: 0; }
+    .special .special-ad img {
+      width: 100%; }
+  .special .special-container {
+    padding: 3% 0; }
+    .special .special-container .text {
+      margin-top: 2%; }
+      .special .special-container .text h3 {
+        font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #333;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .special .special-container .text p {
+        font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #da004c; }
+
+.shop-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding-top: 3%;
+  background: #fff;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  box-shadow: -1px 1px 15px #ccc;
+  align-items: center; }
+  .shop-footer > a {
+    flex: 1;
+    text-align: center; }
+    .shop-footer > a i {
+      width: 25%;
+      font-size: 0;
+      display: block;
+      margin: 0 auto; }
+      .shop-footer > a i img {
+        width: 100%; }
+    .shop-footer > a p {
+      font: 0.7rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999; }
+  .shop-footer .on p {
+    color: #da004c; }
+
+.classify-wrapper {
+  padding-top: 2.5rem; }
+
+.haeder-classify {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: #fff;
+  padding: 3% 0;
+  border-bottom: 1px solid #ddd; }
+  .haeder-classify ul {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .haeder-classify ul li {
+      position: relative;
+      flex: 1;
+      font: 0.7rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #333;
+      text-align: center; }
+      .haeder-classify ul li:nth-child(2):before {
+        position: absolute;
+        bottom: .2rem;
+        right: .2rem;
+        content: "";
+        width: 0;
+        height: 0;
+        border: .18rem solid;
+        border-color: #ccc transparent transparent transparent; }
+      .haeder-classify ul li:nth-child(2):after {
+        position: absolute;
+        top: .3rem;
+        right: .2rem;
+        content: "";
+        width: 0;
+        height: 0;
+        border: .18rem solid;
+        border-color: transparent transparent #ccc transparent; }
+      .haeder-classify ul li:nth-child(3):before {
+        position: absolute;
+        top: 35%;
+        right: .2rem;
+        content: "";
+        width: 0;
+        height: 0;
+        border: .18rem solid;
+        border-color: transparent transparent #ccc transparent; }
+    .haeder-classify ul .on {
+      color: #da004c; }
+      .haeder-classify ul .on:nth-child(2):before {
+        border-color: #da004c transparent transparent transparent; }
+      .haeder-classify ul .on:nth-child(2):after {
+        border-color: transparent transparent #da004c transparent; }
+      .haeder-classify ul .on:nth-child(3):before {
+        border-color: transparent transparent #da004c transparent; }
+
+.classify-container {
+  position: relative;
+  padding: 3%; }
+  .classify-container .left {
+    position: fixed;
+    left: 3%;
+    width: 27%; }
+    .classify-container .left ul li {
+      margin-bottom: 1rem;
+      color: #999;
+      font: 0.7rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .classify-container .left ul .active {
+      color: #da004c; }
+  .classify-container .right {
+    margin-left: 30%; }
+
+.classify-list {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .classify-list > div {
+    position: relative;
+    width: 48.5%; }
+    .classify-list > div:nth-child(2n) {
+      margin-left: 3%; }
+    .classify-list > div .new {
+      position: absolute;
+      font-size: 0; }
+      .classify-list > div .new img {
+        width: 1.5rem; }
+    .classify-list > div .img {
+      font-size: 0; }
+      .classify-list > div .img img {
+        width: 100%; }
+    .classify-list > div .text {
+      padding: 2% 0 5%; }
+      .classify-list > div .text h4 {
+        font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #333;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .classify-list > div .text p {
+        font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #da004c; }
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 1;
+  background: #000;
+  opacity: .8; }
+
+.integrating-range, .pure-integral {
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #fff;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
+  .integrating-range dl, .pure-integral dl {
+    padding: 0 0 0 3%; }
+    .integrating-range dl dd, .pure-integral dl dd {
+      padding: 0 3% 0 0;
+      color: #666;
+      font: 0.7rem/3 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      border-bottom: 1px solid #ddd;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .integrating-range dl dd i, .pure-integral dl dd i {
+        display: none;
+        font-size: 0;
+        width: 1rem; }
+        .integrating-range dl dd i img, .pure-integral dl dd i img {
+          width: 100%; }
+    .integrating-range dl .active, .pure-integral dl .active {
+      color: #da004c; }
+      .integrating-range dl .active i, .pure-integral dl .active i {
+        display: block; }
+
+.integrating-range.on, .on.pure-integral {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.shop-wrapper {
+  padding-bottom: 6.8rem; }
+
+.haeder-shop {
+  padding: 3% 5%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd; }
+  .haeder-shop i {
+    width: 1rem;
+    font-size: 0;
+    margin-right: 5%; }
+    .haeder-shop i img {
+      width: 100%; }
+  .haeder-shop .text {
+    flex: 1; }
+    .haeder-shop .text h3 {
+      font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #333; }
+      .haeder-shop .text h3 a {
+        color: #333;
+        margin-left: 5%; }
+    .haeder-shop .text p {
+      font: 0.55rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999; }
+
+.shop-container {
+  padding: 3% 5%; }
+
+.shop-list .items {
+  position: relative;
+  margin-bottom: 5%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .shop-list .items > i {
+    width: .7rem;
+    height: .7rem;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA4VBMVEVMaXFmZmZmZmZmZmZ1dXVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZmZmZ3d3dmZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZnZ2dmZmZmZmZmZmZ3d3dmZmZmZmZ2dnZmZmZmZmZmZmZmZmZnZ2f////+/v58fHxmZmby8vL4+PiCgoKqqqq6urrU1NTt7e3Z2dnHx8fr6+u7u7vs7OzQ0ND8/Pzu7u6pqanCwsLc3Nz19fXDw8Pd3d3R0dHp6enS0tKHh4eGhobx8fEgQ48EAAAALHRSTlMAA8h2/kDyyzjjB0ilpOLyOT/Eav5mSdDzonfvnvWj8Hidp/xFSvxHyj7F87PHmwwAAAEOSURBVDjLjZPXdoJAFEUPiNIRayyxxPRkYGBAEXs0/f8/KA/GLE1gJvv17LWm3HuAbyStY8lOi9KWI1sdTcIpWrvL1ptkFRISrpLNmnXb2lFsqn4ckBOC2FfNQ95QFh75g/eiNPb51eWcZPJ6cwsAuBuTHMZnAFD0vTzB84sA7JjkMrMBoxzkC59lA/cfhAOroBDxhKiA8ylPmF6g+sQTnqvQJzxh4qAU8oSwBEq4ULEgPEJwSR0PomcKP0r41ZV3wbC44w4eDcCecRbG+s/KQRUsLcx6mp3P69f7YtSUt6ziLJTaoVrN7Oo1j8vbH7Bol6Tb5XKbJruIDfrur35L7nAk6z1Ke7o8Gro/9f8Cp9iV5HtnX6MAAAAASUVORK5CYII=) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 4%; }
+  .shop-list .items .img {
+    margin-right: 3%;
+    width: 4rem;
+    font-size: 0; }
+    .shop-list .items .img img {
+      width: 100%; }
+  .shop-list .items .text {
+    flex: 1; }
+    .shop-list .items .text h5 {
+      padding: 0 10% 5% 0;
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #333; }
+    .shop-list .items .text .money {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .shop-list .items .text .money span {
+        font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #da004c; }
+      .shop-list .items .text .money p {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 3px; }
+        .shop-list .items .text .money p i {
+          position: relative;
+          width: 1rem;
+          height: 1rem; }
+          .shop-list .items .text .money p i:first-child {
+            border-right: 1px solid #ddd; }
+            .shop-list .items .text .money p i:first-child:before {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              content: '';
+              width: .6rem;
+              height: 1px;
+              background: #333;
+              -moz-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+          .shop-list .items .text .money p i:last-child {
+            border-left: 1px solid #ddd; }
+            .shop-list .items .text .money p i:last-child:before {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              content: '';
+              width: .6rem;
+              height: 1px;
+              background: #333;
+              -moz-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+            .shop-list .items .text .money p i:last-child:after {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              content: '';
+              width: 1px;
+              height: .6rem;
+              background: #333;
+              -moz-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+        .shop-list .items .text .money p input {
+          margin: 0 .2rem;
+          text-align: center;
+          width: 1rem;
+          background: none;
+          border: none;
+          outline: none;
+          color: #333; }
+      .shop-list .items .text .money .money-p-b {
+        display: none; }
+  .shop-list .items del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: .65rem;
+    font-size: 0; }
+    .shop-list .items del img {
+      width: 100%; }
+
+.shop-list .items.active > i {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABX1BMVEVMaXFmZmZmZmZmZmZ1dXVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZ3d3dmZmZmZmZ3d3dmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ2f////aAEz86fD+/v58fHz98PTiN3P++vtmZmbsfKPaA07//v7y8vLbBlDdElndFVvgKGj4+PiCgoKqqqq6urr3ydndE1nU1NTseqLdFlvlToP2wNPzqcP2wdPt7e3Hx8fZ2dnyqMLsfaS7u7vr6+vpaJXs7OzeGV7bBVDgKWnQ0NDcEVjfI2XiOnXlTYLlT4Pse6L//P38/Pzqbpnu7u7CwsKpqanc3Nz19fXd3d3Dw8Pp6enR0dHcEFfaAU3S0tLypsH4z93paZbkRX3qcpzpZ5TqcJqGhoaHh4fx8fH8wJArAAAAK3RSTlMAdgcD/kDyyzjjyEilpOLyOcQ//mpm/EnQ86J3756j9Z3weKdKRcpHPsXzo4NUkwAAAbFJREFUOMuNk1dXwlAQhFdA6cXexd5mASWYACFgQ0VUsPfee/3/xwcCJiFHnddvz7l3Z2eIVFkdnR6Xr10Q2n0uT6fDSno5OrqU87P8aQpInebPzpWuDocGu+2RjASdpEzE7i7zZtt2GFUK39qaS3yoZR0Aokuxg61EPJ7YOogtRAHgpmWEiIiGZwGE5uZZo/m5EIDZNiKi2kgYmE6wQYlpIBypJSJvBggluUrJELDmJbL4JWCVTXQIfPktNPoBRDfMBpJRQGmgmjSwYGT3d8zMS0C6hrqXgZiBTz0e7THzKrDcS/UXwL6Br2Bil5mzwFU9OXOAXMUnmZllIOejuhQwY8p5BkjVkQAgzsy7T88lvljmHAcgVAb2RPFEz9WByhNFUTzRcfWJn08WRfFdy1kGck4a+1mzKELL1TW1Rr3iSMNVo3RWv71oFy5Z3fD5x7Esfqn6GOVzS+MWIu/aL4Hx/CdyZP8jtORuLKixz8o7m5s7claN/XrjYKkYTbYHs+Js25rK1Wo1r16rtrw9fUr6Ol+4PD6+LOSv00pfT8DQb2ugf8DlDApC0Oka6A9U6v8Nz02oJg8GShMAAAAASUVORK5CYII=) no-repeat;
+  background-size: 100% 100%; }
+
+.shop-list .items.active .money p {
+  border: 0;
+  color: #333;
+  font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.shop-list .items.active .money .money-p {
+  display: none; }
+
+.shop-all {
+  position: fixed;
+  left: 5%;
+  bottom: 3.5rem;
+  width: 90%;
+  background: #313131;
+  border-radius: 5px;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .shop-all .left {
+    padding: 3%;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2.2; }
+    .shop-all .left p {
+      flex: 1;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #fff; }
+      .shop-all .left p i {
+        width: .7rem;
+        height: .7rem;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA4VBMVEVMaXFmZmZmZmZmZmZ1dXVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZmZmZ3d3dmZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZnZ2dmZmZmZmZmZmZ3d3dmZmZmZmZ2dnZmZmZmZmZmZmZmZmZnZ2f////+/v58fHxmZmby8vL4+PiCgoKqqqq6urrU1NTt7e3Z2dnHx8fr6+u7u7vs7OzQ0ND8/Pzu7u6pqanCwsLc3Nz19fXDw8Pd3d3R0dHp6enS0tKHh4eGhobx8fEgQ48EAAAALHRSTlMAA8h2/kDyyzjjB0ilpOLyOT/Eav5mSdDzonfvnvWj8Hidp/xFSvxHyj7F87PHmwwAAAEOSURBVDjLjZPXdoJAFEUPiNIRayyxxPRkYGBAEXs0/f8/KA/GLE1gJvv17LWm3HuAbyStY8lOi9KWI1sdTcIpWrvL1ptkFRISrpLNmnXb2lFsqn4ckBOC2FfNQ95QFh75g/eiNPb51eWcZPJ6cwsAuBuTHMZnAFD0vTzB84sA7JjkMrMBoxzkC59lA/cfhAOroBDxhKiA8ylPmF6g+sQTnqvQJzxh4qAU8oSwBEq4ULEgPEJwSR0PomcKP0r41ZV3wbC44w4eDcCecRbG+s/KQRUsLcx6mp3P69f7YtSUt6ziLJTaoVrN7Oo1j8vbH7Bol6Tb5XKbJruIDfrur35L7nAk6z1Ke7o8Gro/9f8Cp9iV5HtnX6MAAAAASUVORK5CYII=) no-repeat;
+        background-size: 100% 100%;
+        margin-right: .4rem; }
+    .shop-all .left .on i {
+      width: .7rem;
+      height: .7rem;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABX1BMVEVMaXFmZmZmZmZmZmZ1dXVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZ3d3dmZmZmZmZ3d3dmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZmZmZnZ2dmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ2f////aAEz86fD+/v58fHz98PTiN3P++vtmZmbsfKPaA07//v7y8vLbBlDdElndFVvgKGj4+PiCgoKqqqq6urr3ydndE1nU1NTseqLdFlvlToP2wNPzqcP2wdPt7e3Hx8fZ2dnyqMLsfaS7u7vr6+vpaJXs7OzeGV7bBVDgKWnQ0NDcEVjfI2XiOnXlTYLlT4Pse6L//P38/Pzqbpnu7u7CwsKpqanc3Nz19fXd3d3Dw8Pp6enR0dHcEFfaAU3S0tLypsH4z93paZbkRX3qcpzpZ5TqcJqGhoaHh4fx8fH8wJArAAAAK3RSTlMAdgcD/kDyyzjjyEilpOLyOcQ//mpm/EnQ86J3756j9Z3weKdKRcpHPsXzo4NUkwAAAbFJREFUOMuNk1dXwlAQhFdA6cXexd5mASWYACFgQ0VUsPfee/3/xwcCJiFHnddvz7l3Z2eIVFkdnR6Xr10Q2n0uT6fDSno5OrqU87P8aQpInebPzpWuDocGu+2RjASdpEzE7i7zZtt2GFUK39qaS3yoZR0Aokuxg61EPJ7YOogtRAHgpmWEiIiGZwGE5uZZo/m5EIDZNiKi2kgYmE6wQYlpIBypJSJvBggluUrJELDmJbL4JWCVTXQIfPktNPoBRDfMBpJRQGmgmjSwYGT3d8zMS0C6hrqXgZiBTz0e7THzKrDcS/UXwL6Br2Bil5mzwFU9OXOAXMUnmZllIOejuhQwY8p5BkjVkQAgzsy7T88lvljmHAcgVAb2RPFEz9WByhNFUTzRcfWJn08WRfFdy1kGck4a+1mzKELL1TW1Rr3iSMNVo3RWv71oFy5Z3fD5x7Esfqn6GOVzS+MWIu/aL4Hx/CdyZP8jtORuLKixz8o7m5s7claN/XrjYKkYTbYHs+Js25rK1Wo1r16rtrw9fUr6Ol+4PD6+LOSv00pfT8DQb2ugf8DlDApC0Oka6A9U6v8Nz02oJg8GShMAAAAASUVORK5CYII=) no-repeat;
+      background-size: 100% 100%; }
+    .shop-all .left .money h6 {
+      font: 0.55rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999;
+      text-align: right;
+      margin-bottom: 5%; }
+    .shop-all .left .money p {
+      font: 0.75rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #fff; }
+  .shop-all .right {
+    flex: 1;
+    background: #da004c;
+    height: 3rem;
+    border-radius: 0 5px 5px 0; }
+  .shop-all a {
+    font: 0.7rem/3rem -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #fff;
+    text-align: center;
+    display: block; }
+
+.lose-efficacy {
+  margin-top: 2rem; }
+  .lose-efficacy .t, .lose-efficacy .detail-container .m, .detail-container .lose-efficacy .m, .lose-efficacy .detail-container .b, .detail-container .lose-efficacy .b {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3%; }
+    .lose-efficacy .t span, .lose-efficacy .detail-container .m span, .detail-container .lose-efficacy .m span, .lose-efficacy .detail-container .b span, .detail-container .lose-efficacy .b span {
+      color: #999;
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .lose-efficacy .t p, .lose-efficacy .detail-container .m p, .detail-container .lose-efficacy .m p, .lose-efficacy .detail-container .b p, .detail-container .lose-efficacy .b p {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .lose-efficacy .t p i, .lose-efficacy .detail-container .m p i, .detail-container .lose-efficacy .m p i, .lose-efficacy .detail-container .b p i, .detail-container .lose-efficacy .b p i {
+        width: .65rem;
+        font-size: 0;
+        margin-right: .5rem; }
+        .lose-efficacy .t p i img, .lose-efficacy .detail-container .m p i img, .detail-container .lose-efficacy .m p i img, .lose-efficacy .detail-container .b p i img, .detail-container .lose-efficacy .b p i img {
+          width: 100%; }
+  .lose-efficacy .b {
+    margin-top: 3%; }
+    .lose-efficacy .b .list {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .lose-efficacy .b .list .img {
+        margin-right: 3%;
+        width: 4rem;
+        font-size: 0; }
+        .lose-efficacy .b .list .img img {
+          width: 100%; }
+      .lose-efficacy .b .list .text {
+        flex: 1; }
+        .lose-efficacy .b .list .text h6 {
+          color: #999;
+          font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          margin-bottom: 5%; }
+        .lose-efficacy .b .list .text p {
+          color: #999;
+          font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.order-wrapper {
+  background-color: #f5f5f5; }
+  .order-wrapper .order-container {
+    padding: 3%; }
+
+.order-list {
+  margin-bottom: 3%;
+  padding: 3%;
+  background-color: #fff;
+  border-radius: 5px; }
+  .order-list .title {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #ddd; }
+    .order-list .title span {
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999; }
+    .order-list .title .already {
+      color: #da004c; }
+  .order-list .items {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin-top: 3%; }
+    .order-list .items .img {
+      margin-right: 3%;
+      width: 4rem;
+      font-size: 0; }
+      .order-list .items .img img {
+        width: 100%; }
+    .order-list .items .text {
+      flex: 1; }
+      .order-list .items .text h5 {
+        color: #333;
+        font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        margin-bottom: 5%; }
+      .order-list .items .text .money {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .order-list .items .text .money span {
+          color: #333;
+          font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+          .order-list .items .text .money span:first-child {
+            color: #da004c; }
+  .order-list .all-item {
+    padding-top: 3%;
+    margin-top: 3%;
+    border-top: 1px solid #ddd; }
+    .order-list .all-item > p {
+      color: #333;
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      text-align: right; }
+    .order-list .all-item .btn {
+      padding-top: 3%;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .order-list .all-item .btn a {
+        padding: 0 5%;
+        color: #333;
+        font: 0.7rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        margin-left: 5%; }
+        .order-list .all-item .btn a:last-child {
+          color: #fff;
+          background: #da004c;
+          border: 1px solid #da004c; }
+
+.detail-wrapper {
+  background-color: #f5f5f5; }
+  .detail-wrapper .detail-header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding: 3%; }
+    .detail-wrapper .detail-header a {
+      position: relative;
+      width: 1rem;
+      height: 1rem; }
+      .detail-wrapper .detail-header a:after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        width: 8px;
+        height: 8px;
+        border: 1px solid;
+        border-bottom: 0;
+        border-right: 0;
+        margin-top: -4px;
+        color: #ccc;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg); }
+    .detail-wrapper .detail-header h1 {
+      flex: 1;
+      color: #666;
+      font: 0.75rem/1rem -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      text-align: center;
+      margin-left: -.5rem; }
+
+.detail-container .t, .detail-container .m, .detail-container .b {
+  background: #fff;
+  padding: 3%;
+  margin: 3%;
+  border-radius: 5px; }
+  .detail-container .t .line, .detail-container .m .line, .detail-container .b .line {
+    position: relative;
+    width: 84%;
+    margin: 0 auto 3%;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .detail-container .t .line:before, .detail-container .m .line:before, .detail-container .b .line:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #999;
+      margin-top: -1px; }
+    .detail-container .t .line i, .detail-container .m .line i, .detail-container .b .line i {
+      position: relative;
+      width: 1rem;
+      height: 1rem;
+      background: #999;
+      border-radius: 100%; }
+  .detail-container .t p, .detail-container .m p, .detail-container .b p {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .detail-container .t p span, .detail-container .m p span, .detail-container .b p span {
+      color: #999;
+      font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.detail-container .active1 .line i:nth-child(1) {
+  background: #da004c; }
+  .detail-container .active1 .line i:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #fff;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.detail-container .active1 p span:nth-child(1) {
+  color: #da004c; }
+
+.detail-container .active2 .line:before {
+  background: linear-gradient(to right, #da004c 50%, #999 50%); }
+
+.detail-container .active2 .line i:nth-child(1) {
+  background: #da004c; }
+  .detail-container .active2 .line i:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #fff;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.detail-container .active2 .line i:nth-child(2) {
+  background: #da004c; }
+  .detail-container .active2 .line i:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #fff;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.detail-container .active2 p span:nth-child(1) {
+  color: #da004c; }
+
+.detail-container .active2 p span:nth-child(2) {
+  color: #da004c; }
+
+.detail-container .active3 .line:before {
+  background: #da004c; }
+
+.detail-container .active3 .line i:nth-child(1) {
+  background: #da004c; }
+  .detail-container .active3 .line i:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #fff;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.detail-container .active3 .line i:nth-child(2) {
+  background: #da004c; }
+  .detail-container .active3 .line i:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #fff;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.detail-container .active3 .line i:nth-child(3) {
+  background: #da004c; }
+  .detail-container .active3 .line i:nth-child(3):after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #fff;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.detail-container .active3 p span:nth-child(1) {
+  color: #da004c; }
+
+.detail-container .active3 p span:nth-child(2) {
+  color: #da004c; }
+
+.detail-container .active3 p span:nth-child(3) {
+  color: #da004c; }
+
+.detail-container .m .title, .detail-container .b .title {
+  padding-bottom: 3%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .detail-container .m .title i, .detail-container .b .title i {
+    width: .7rem;
+    font-size: 0;
+    margin-right: .5rem; }
+    .detail-container .m .title i img, .detail-container .b .title i img {
+      width: 100%; }
+  .detail-container .m .title span, .detail-container .b .title span {
+    color: #999;
+    font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.detail-container .m .text-list, .detail-container .b .text-list {
+  padding-top: 3%;
+  margin-left: 8%;
+  border-top: 1px dashed #ddd; }
+  .detail-container .m .text-list p, .detail-container .b .text-list p {
+    padding: 1% 0;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .detail-container .m .text-list p span:nth-child(1), .detail-container .b .text-list p span:nth-child(1) {
+      color: #333; }
+
+.detail-container .b .text-list p {
+  justify-content: flex-start; }
+  .detail-container .b .text-list p span:nth-child(1) {
+    flex: 1;
+    color: #333; }
+  .detail-container .b .text-list p span:nth-child(2) {
+    flex: 2.5;
+    color: #333; }
+
+.list-wrapper {
+  background-color: #fff;
+  padding-bottom: 0; }
+  .list-wrapper .list-header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding: 3%; }
+    .list-wrapper .list-header a {
+      position: relative;
+      width: 1rem;
+      height: 1rem; }
+      .list-wrapper .list-header a:after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        width: 8px;
+        height: 8px;
+        border: 1px solid;
+        border-bottom: 0;
+        border-right: 0;
+        margin-top: -4px;
+        color: #ccc;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg); }
+    .list-wrapper .list-header h1 {
+      flex: 1;
+      color: #666;
+      font: 0.75rem/1rem -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      text-align: center;
+      margin-left: -.5rem; }
+
+.list-products {
+  padding: 0 3% 3%; }
+  .list-products .title {
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 3%; }
+    .list-products .title img {
+      width: 100%; }
+  .list-products .products-list {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .list-products .products-list > a {
+      width: 48.5%; }
+      .list-products .products-list > a:nth-child(2n) {
+        margin-left: 3%; }
+      .list-products .products-list > a .img {
+        position: relative;
+        overflow: hidden;
+        font-size: 0; }
+        .list-products .products-list > a .img img {
+          width: 100%; }
+        .list-products .products-list > a .img .new {
+          width: 20%;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .list-products .products-list > a .img .sell {
+          width: 40%;
+          position: absolute;
+          right: -7.5%;
+          bottom: -7.5%; }
+      .list-products .products-list > a .text {
+        padding: 2% 0 5%; }
+        .list-products .products-list > a .text h4 {
+          font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .list-products .products-list > a .text p {
+          font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          color: #da004c; }
+
+.info-wrapper {
+  padding-bottom: 4.5rem; }
+  .info-wrapper .info-header {
+    position: relative;
+    width: 100%;
+    font-size: 0; }
+    .info-wrapper .info-header img {
+      width: 100%; }
+    .info-wrapper .info-header a {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      left: 2%;
+      top: 3%; }
+      .info-wrapper .info-header a:after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        width: 8px;
+        height: 8px;
+        border: 1px solid;
+        border-bottom: 0;
+        border-right: 0;
+        margin-top: -4px;
+        color: #ccc;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg); }
+    .info-wrapper .info-header p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.7);
+      font: 0.6rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #fff;
+      text-align: center; }
+      .info-wrapper .info-header p em {
+        color: #fff000;
+        margin: 0 .2rem; }
+  .info-wrapper .btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    .info-wrapper .btn .t, .info-wrapper .btn .detail-container .m, .detail-container .info-wrapper .btn .m, .info-wrapper .btn .detail-container .b, .detail-container .info-wrapper .btn .b {
+      margin-bottom: .5rem;
+      display: none; }
+      .info-wrapper .btn .t > a, .info-wrapper .btn .detail-container .m > a, .detail-container .info-wrapper .btn .m > a, .info-wrapper .btn .detail-container .b > a, .detail-container .info-wrapper .btn .b > a {
+        display: block;
+        margin: 0 2%;
+        padding: 2%;
+        color: #fff;
+        font: 0.5rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        background-color: #da004c;
+        border-radius: 30px;
+        text-align: center; }
+    .info-wrapper .btn .b {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 2.4rem; }
+      .info-wrapper .btn .b > a {
+        color: #fff;
+        font: 0.8rem/2.4rem -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        text-align: center;
+        flex: 1; }
+        .info-wrapper .btn .b > a:first-child {
+          background-color: #ff5993; }
+        .info-wrapper .btn .b > a:last-child {
+          background-color: #da004c; }
+  .info-wrapper .btn.active .t, .info-wrapper .btn.active .detail-container .m, .detail-container .info-wrapper .btn.active .m, .info-wrapper .btn.active .detail-container .b, .detail-container .info-wrapper .btn.active .b {
+    display: block; }
+  .info-wrapper .btn.active .b > a:first-child {
+    background-color: #a0a0a0; }
+  .info-wrapper .btn.active .b > a:last-child {
+    background-color: #959595; }
+
+.info-container .info-title {
+  padding: 5%;
+  border-bottom: 1px solid #ddd; }
+  .info-container .info-title .t, .info-container .info-title .detail-container .m, .detail-container .info-container .info-title .m, .info-container .info-title .detail-container .b, .detail-container .info-container .info-title .b {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem; }
+    .info-container .info-title .t h3, .info-container .info-title .detail-container .m h3, .detail-container .info-container .info-title .m h3, .info-container .info-title .detail-container .b h3, .detail-container .info-container .info-title .b h3 {
+      color: #333;
+      font: 0.8rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .info-container .info-title .t span, .info-container .info-title .detail-container .m span, .detail-container .info-container .info-title .m span, .info-container .info-title .detail-container .b span, .detail-container .info-container .info-title .b span {
+      margin-left: .5rem;
+      display: inline-block;
+      padding: 2%;
+      background-color: #ff0000;
+      color: #fff;
+      border-radius: 30px;
+      font: 0.6rem/1 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+  .info-container .info-title h2 {
+    color: #da004c;
+    font: bold 0.8rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+  .info-container .info-title del {
+    color: #999;
+    font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.info-container .info-content {
+  padding: 5% 5% 0 5%; }
+  .info-container .info-content h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: #333;
+    font: 0.8rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .info-container .info-content h3:first-child {
+      margin-top: 0; }
+  .info-container .info-content p {
+    color: #666;
+    font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
